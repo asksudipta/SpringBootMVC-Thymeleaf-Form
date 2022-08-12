@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Dashboard App</title>
+    <link rel="stylefootsheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css} "/>
+    <script defer th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script defer th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script defer th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+    <title>Registration Successfully Done!!</title>
+
+    <style type="text/css">
+        span {
+            display: inline-block;
+            width: 200px;
+            text-align: left;
+        }
+    </style>
+
+
+</head>
+<body>
+<style>
+    body {
+        background-color: lightgrey;
+        color: blue;
+    }
+
+    h1 {
+        background-color: black;
+        color: white;
+    }
+   h2{
+       color : red ;
+   }
+
+    div {
+        background-color: blue;
+        color: white;
+    }
+</style>
+
+<div align="center">
+    <h2> Registration Successfully Done!!</h2>
+    <span>Full name:</span><span th:text="${user.name}"></span><br/>
+    <span>E-mail:</span><span th:text="${user.email}"></span><br/>
+    <span>Password:</span><span th:text="${user.password}"></span><br/>
+    <span>birthdate:</span><span th:text="${user.birthdate}"></span><br/>
+    <span>Gender:</span><span th:text="${user.gender}"></span><br/>
+    <span>Profession:</span><span th:text="${user.purpose}"></span><br/>
+    <span>Married?</span><span th:text="${user.married}"></span><br/>
+    <span>Note:</span><span th:text="${user.note}"></span><br/>
+</div>
+
+
+</body>
+</html>
