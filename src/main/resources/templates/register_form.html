@@ -59,7 +59,8 @@
 
         <!--th:field attribute points to the field name of the object-->
 
-        <input type="text" th:field="*{name}"placeholder="Enter Your Name Here.."/><br/>
+        <input type="text" th:field="*{name}" placeholder="Enter Your Name Here.."/><br/>
+        <p style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p><br/>
         <label>E-mail:</label>
         <input type="text" th:field="*{email}" /><br/>
 

@@ -31,4 +31,13 @@ public class UserEntity {
     private boolean married;
     private LocalDate birthdate;
     private String purpose;
+
+
+    public UserEntity(String name, String email, String password, String gender, String gender1, boolean married, String note, String purpose) {
+
+    }
+
+    public UserEntity(String name) {
+
+    }
 }
